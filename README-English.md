@@ -2,7 +2,7 @@
 
 [中文](README.md) | [English](README-English.md)
 
-This repository collects course materials, study notes, and sample code for artificial intelligence foundations. It covers four areas: mathematical fundamentals, machine learning, deep learning, and large language model applications. The repository is in its initial stage: the directory skeleton is ready, and content will be added to `docs/`, `notes/`, and `src/` over time.
+This repository collects study notes on artificial intelligence foundations, covering four areas: mathematical fundamentals, machine learning, deep learning, and large language model applications. Seven notes on the introduction and mathematical foundations are ready. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
 
 ## Repository Layout
 
@@ -11,13 +11,14 @@ ai-foundations-handbook/
 ├── README.md
 ├── README-English.md
 ├── docs/            # Course slides and PDF / DOCX materials
-├── notes/           # Markdown study notes and summaries
-└── src/             # Sample code and exercises
+└── notes/           # Markdown study notes and summaries
 ```
 
 ## Notes Index
 
 Seven notes on the introduction and mathematical foundations are available. Each note ends with a glossary table (term / full name / abbreviation / brief description). The notes themselves are written in Chinese.
+
+Reading order: start with 000 for the big picture, then move on to 001-006 for the mathematical foundations. Each note also contains blockquotes labelled “新手提示” (beginner tips) that explain the terms and formulas most likely to trip up newcomers.
 
 | No. | Note | Topics |
 | --- | --- | --- |
@@ -61,8 +62,8 @@ Seven notes on the introduction and mathematical foundations are available. Each
 
 - Materials in `docs/` are numbered by topic, for example `001-xxx.pdf`.
 - Notes in `notes/` keep the same numbering as the matching materials.
-- Code in `src/` is organized into chapter directories and stays runnable on its own.
-- Key conclusions in notes and code should record their sources for later review.
+- Formulas in the notes are written in LaTeX and render directly on GitHub. For local reading, use an editor with math support (e.g. VS Code with Markdown Preview Enhanced).
+- Key conclusions in the notes should record their sources for later review.
 
 ## Keywords
 

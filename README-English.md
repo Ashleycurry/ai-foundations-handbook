@@ -15,6 +15,20 @@ ai-foundations-handbook/
 └── src/             # Sample code and exercises
 ```
 
+## Notes Index
+
+Seven notes on the introduction and mathematical foundations are available. Each note ends with a glossary table (term / full name / abbreviation / brief description). The notes themselves are written in Chinese.
+
+| No. | Note | Topics |
+| --- | --- | --- |
+| 000 | [Introduction to AI: from hype to technical routes](notes/000-人工智能导论：从热潮到技术路线.md) | Technical routes, knowledge map |
+| 001 | [Linear Algebra: vectors, matrices, and eigen-decomposition](notes/001-线性代数：向量、矩阵与特征分解.md) | Norms, inner product, EVD, SVD |
+| 002 | [Probability: uncertainty, Bayes, and common distributions](notes/002-概率论：不确定性、贝叶斯与常见分布.md) | Conditional probability, Bayes, distributions |
+| 003 | [Mathematical Statistics: estimation and hypothesis testing](notes/003-数理统计：参数估计与假设检验.md) | Point estimation, confidence intervals, bias-variance |
+| 004 | [Optimization: gradient descent, Newton's method, and heuristics](notes/004-最优化：梯度下降、牛顿法与启发式算法.md) | Lagrange multipliers, SGD, trust region |
+| 005 | [Information Theory: entropy, mutual information, and maximum entropy](notes/005-信息论：熵、互信息与最大熵.md) | Entropy, KL divergence, MaxEnt |
+| 006 | [Formal Logic: predicate logic, production systems, and incompleteness](notes/006-形式逻辑：谓词逻辑、产生式系统与不完备性.md) | Knowledge representation, inference, Gödel |
+
 ## Planned Content
 
 ### 1. Mathematics and Fundamentals

@@ -2,7 +2,7 @@
 
 [中文](README.md) | [English](README-English.md)
 
-This repository collects study notes on artificial intelligence foundations, organised across six sections: introduction, mathematical foundations, machine learning, artificial neural networks, deep learning, and neural networks under deep learning frameworks. Twenty-two notes (000-021) are finished and proofread so far. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
+This repository collects study notes on artificial intelligence foundations, organised across six sections: introduction, mathematical foundations, machine learning, artificial neural networks, deep learning, and neural networks under deep learning frameworks. Twenty-eight notes (000-027) are finished and proofread so far. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
 
 ## Repository Layout
 
@@ -24,7 +24,7 @@ ai-foundations-handbook/
 
 Notes are organised as "section / number", with file names such as `007-机器学习概论：假设空间、泛化误差与模型评估.md`, where the topic comes before the colon and the subtitle after it. Each note ends with a glossary table (term / full name / abbreviation / brief description).
 
-Reading order: start with 000 for the big picture, then work through 001-006 for the mathematical foundations, move on to 007-015 for the classic machine learning algorithms, and finish with 016-021 on neural network structures. Each note also contains blockquotes labelled "新手提示" (beginner tips) that explain the terms and formulas most likely to trip up newcomers.
+Reading order: start with 000 for the big picture, then work through 001-006 for the mathematical foundations, move on to 007-015 for the classic machine learning algorithms, and finish with 016-021 on neural network structures and 022-027 on deep learning. Each note also contains blockquotes labelled "新手提示" (beginner tips) that explain the terms and formulas most likely to trip up newcomers.
 
 ### 000 Introduction
 
@@ -68,15 +68,20 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 | 020 | [Self-organizing maps: competitive learning, lateral inhibition and topological ordering](notes/003-人工神经网络/020-自组织特征映射：竞争学习、侧向抑制与拓扑排序.md) | Winner-takes-all, neighborhood function, vector quantization, U-matrix |
 | 021 | [Fuzzy neural networks: fuzzy sets, level sets and genetic algorithms](notes/003-人工神经网络/021-模糊神经网络：模糊集合、水平集与遗传算法.md) | Membership degree, extension principle, cutoff point, conjugate gradient |
 
-Sections after neural networks are still being organised: the directories for 004 onwards are in place, and their notes will be added to this index as they are written.
-
-## Planned Sections
-
 ### 004 Deep Learning
 
-- Full derivation of forward and backward propagation.
-- Convolutional networks, recurrent networks, and Transformers.
-- Training techniques: initialization, normalization, learning-rate schedules, and regularization.
+| No. | Note | Topics |
+| --- | --- | --- |
+| 022 | [Deep learning overview: Deep Blue vs. AlphaGo, hierarchical abstraction and engineering conditions](notes/004-深度学习/022-深度学习概述：深蓝与 AlphaGo、层级抽象与工程条件.md) | Deep Blue and AlphaGo, hierarchical features, data and compute |
+| 023 | [Deep feedforward networks: universal approximation, loss functions and activation functions](notes/004-深度学习/023-深度前馈网络：通用逼近、损失函数与激活函数.md) | Universal approximation theorem, cross-entropy, ReLU |
+| 024 | [Regularization: data augmentation, weight sharing and weight decay](notes/004-深度学习/024-正则化：数据增强、参数共享与权重衰减.md) | Data augmentation, Dropout, L1/L2, early stopping |
+| 025 | [Optimization: ill-conditioned Hessian, SGD and momentum](notes/004-深度学习/025-优化：病态 Hessian、随机梯度下降与动量法.md) | Condition number, saddle points, variance reduction, momentum |
+| 026 | [Autoencoders: undercomplete coding, stacked pre-training and variational generation](notes/004-深度学习/026-自编码器：欠完备编码、栈式预训练与变分生成.md) | Bottleneck representation, stacked pre-training, denoising, VAE |
+| 027 | [Deep reinforcement learning: Markov decision processes, DQN and policy gradients](notes/004-深度学习/027-深度强化学习：马尔可夫决策、深度 Q 网络与策略梯度.md) | MDP, DQN, policy gradient, model-based methods |
+
+Sections after deep learning are still being organised: the directories for 005 onwards are in place, and their notes will be added to this index as they are written.
+
+## Planned Sections
 
 ### 005 Neural Networks under Deep Learning Frameworks
 

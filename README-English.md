@@ -47,15 +47,15 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 
 | No. | Note | Topics |
 | --- | --- | --- |
-| 007 | [Peaks to climb, seas to cross: machine learning overview](notes/002-机器学习/007-机器学习-数山有路，学海无涯：机器学习概论.md) | Hypothesis space, overfitting, cross validation, generative vs discriminative |
-| 008 | [Simple, not simplistic: linear regression](notes/002-机器学习/008-机器学习-简约而不简单：线性回归.md) | Least squares, maximum likelihood, ridge, LASSO |
-| 009 | [The great way is simple: naive Bayes](notes/002-机器学习/009-机器学习-大道至简：朴素贝叶斯方法.md) | Bayes decision, conditional independence, Laplace smoothing |
-| 010 | [From simple to intricate: logistic regression](notes/002-机器学习/010-机器学习-衍化至繁：逻辑回归.md) | Sigmoid, maximum likelihood, log-odds, Softmax |
-| 011 | [Step by step, rule by rule: decision trees](notes/002-机器学习/011-机器学习-步步为营，有章可循：决策树.md) | Information gain, gain ratio, Gini, pruning |
-| 012 | [When exhausted, change: support vector machines](notes/002-机器学习/012-机器学习-穷则变，变则通：支持向量机.md) | Margin maximization, soft margin, kernel trick, SMO |
-| 013 | [Three cobblers outwit Zhuge Liang: ensemble learning](notes/002-机器学习/013-机器学习-三个臭皮匠，赛过诸葛亮：集成学习.md) | Boosting, Bagging, AdaBoost, random forest |
-| 014 | [Birds of a feather flock together: cluster analysis](notes/002-机器学习/014-机器学习-物以类聚，人以群分：聚类分析.md) | Distance measures, k-means, EM, DBSCAN |
-| 015 | [Use the steel on the blade: dimensionality reduction](notes/002-机器学习/015-机器学习-好钢用在刀刃上：降维学习.md) | PCA, kernel PCA, feature selection |
+| 007 | [Machine learning overview: peaks to climb, seas to cross](notes/002-机器学习/007-机器学习概论：数山有路，学海无涯.md) | Hypothesis space, overfitting, cross validation, generative vs discriminative |
+| 008 | [Linear regression: simple, not simplistic](notes/002-机器学习/008-线性回归：简约而不简单.md) | Least squares, maximum likelihood, ridge, LASSO |
+| 009 | [Naive Bayes: the great way is simple](notes/002-机器学习/009-朴素贝叶斯方法：大道至简.md) | Bayes decision, conditional independence, Laplace smoothing |
+| 010 | [Logistic regression: from simple to intricate](notes/002-机器学习/010-逻辑回归：衍化至繁.md) | Sigmoid, maximum likelihood, log-odds, Softmax |
+| 011 | [Decision trees: step by step, rule by rule](notes/002-机器学习/011-决策树：步步为营，有章可循.md) | Information gain, gain ratio, Gini, pruning |
+| 012 | [Support vector machines: when exhausted, change](notes/002-机器学习/012-支持向量机：穷则变，变则通.md) | Margin maximization, soft margin, kernel trick, SMO |
+| 013 | [Ensemble learning: three cobblers outwit Zhuge Liang](notes/002-机器学习/013-集成学习：三个臭皮匠，赛过诸葛亮.md) | Boosting, Bagging, AdaBoost, random forest |
+| 014 | [Cluster analysis: birds of a feather flock together](notes/002-机器学习/014-聚类分析：物以类聚，人以群分.md) | Distance measures, k-means, EM, DBSCAN |
+| 015 | [Dimensionality reduction: use the steel on the blade](notes/002-机器学习/015-降维学习：好钢用在刀刃上.md) | PCA, kernel PCA, feature selection |
 
 Sections after machine learning are still being organised: the directories for 003 onwards are in place, and their notes will be added to this index as they are written.
 

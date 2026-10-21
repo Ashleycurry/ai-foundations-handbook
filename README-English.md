@@ -2,7 +2,7 @@
 
 [中文](README.md) | [English](README-English.md)
 
-This repository collects study notes on artificial intelligence foundations, organised across six sections: introduction, mathematical foundations, machine learning, artificial neural networks, deep learning, and neural networks under deep learning frameworks. Twenty-eight notes (000-027) are finished and proofread so far. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
+This repository collects study notes on artificial intelligence foundations, organised across six sections: introduction, mathematical foundations, machine learning, artificial neural networks, deep learning, and neural networks under deep learning frameworks. Twenty-eight notes (000-027) are finished, and each has been checked for formulas, worked examples and cross-references. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
 
 ## Repository Layout
 
@@ -95,6 +95,7 @@ Sections after deep learning are still being organised: the directories for 005 
 - Notes in `notes/` are grouped by section; file names follow "number-topic: subtitle".
 - Formulas in the notes are written in LaTeX and render directly on GitHub. For local reading, use an editor with math support (e.g. VS Code with Markdown Preview Enhanced).
 - Inline math is mostly replaced by plain-text symbols; only a few block-level formulas are kept, so the notes stay readable in any terminal.
+- Review follows three rules: every formula can be verified term by term, every definition or conclusion has a clear source, and every number or cross-reference points to the right note.
 
 ## Keywords
 

@@ -17,7 +17,7 @@ ai-foundations-handbook/
     ├── 002-机器学习/                 # Nine classic machine learning methods
     ├── 003-人工神经网络/             # Neurons, perceptrons, and network structures
     ├── 004-深度学习/                 # Deep networks and training techniques
-    └── 005-深度学习框架下的神经网络/ # Framework implementations and engineering practice
+    └── 005-深度学习框架下的神经网络/ # Planned: framework implementations and engineering practice
 ```
 
 ## Notes Index
@@ -50,21 +50,21 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 | 007 | [Machine learning overview: hypothesis space, generalization error and model evaluation](notes/002-机器学习/007-机器学习概论：假设空间、泛化误差与模型评估.md) | Overfitting, cross validation, generative vs discriminative |
 | 008 | [Linear regression: least squares, regularization and GLM](notes/002-机器学习/008-线性回归：最小二乘、正则化与广义线性模型.md) | Maximum likelihood, ridge, LASSO, basis functions |
 | 009 | [Naive Bayes: Bayes decision, conditional independence and smoothing](notes/002-机器学习/009-朴素贝叶斯：贝叶斯决策、条件独立与平滑.md) | Priors and posteriors, MLE, text classification |
-| 010 | [Logistic regression: log-odds, maximum likelihood and Softmax](notes/002-机器学习/010-逻辑回归：对数几率、最大似然与 Softmax.md) | Sigmoid, gradient descent, multiclass extension |
+| 010 | [Logistic regression: log-odds, maximum likelihood and Softmax](notes/002-机器学习/010-逻辑回归：对数几率、最大似然与%20Softmax.md) | Sigmoid, gradient descent, multiclass extension |
 | 011 | [Decision trees: information gain, Gini index and pruning](notes/002-机器学习/011-决策树：信息增益、基尼系数与剪枝.md) | ID3, C4.5, CART, pre-pruning and post-pruning |
-| 012 | [Support vector machines: margin maximization, kernel trick and SMO](notes/002-机器学习/012-支持向量机：间隔最大化、核技巧与 SMO.md) | Hard margin, soft margin, dual problem, support vectors |
-| 013 | [Ensemble learning: Boosting, Bagging and random forests](notes/002-机器学习/013-集成学习：Boosting、Bagging 与随机森林.md) | AdaBoost, bootstrap sampling, bias and variance |
-| 014 | [Clustering: distance measures, k-means and DBSCAN](notes/002-机器学习/014-聚类分析：距离度量、k 均值与 DBSCAN.md) | Hierarchical clustering, EM, density-reachability |
-| 015 | [Dimensionality reduction: PCA, kernel PCA and feature selection](notes/002-机器学习/015-降维学习：主成分分析、核化 PCA 与特征选择.md) | Covariance matrix, eigendecomposition, wrapper and filter methods |
+| 012 | [Support vector machines: margin maximization, kernel trick and SMO](notes/002-机器学习/012-支持向量机：间隔最大化、核技巧与%20SMO.md) | Hard margin, soft margin, dual problem, support vectors |
+| 013 | [Ensemble learning: Boosting, Bagging and random forests](notes/002-机器学习/013-集成学习：Boosting、Bagging%20与随机森林.md) | AdaBoost, bootstrap sampling, bias and variance |
+| 014 | [Clustering: distance measures, k-means and DBSCAN](notes/002-机器学习/014-聚类分析：距离度量、k%20均值与%20DBSCAN.md) | Hierarchical clustering, EM, density-reachability |
+| 015 | [Dimensionality reduction: PCA, kernel PCA and feature selection](notes/002-机器学习/015-降维学习：主成分分析、核化%20PCA%20与特征选择.md) | Covariance matrix, eigendecomposition, wrapper and filter methods |
 
 ### 003 Artificial Neural Networks
 
 | No. | Note | Topics |
 | --- | --- | --- |
 | 016 | [Physiological background of neural networks: neurons, cognitive hierarchy and the limits of silicon](notes/003-人工神经网络/016-神经网络的生理学背景：神经元、认知层级与硅基局限.md) | Connectionism, perceptual objects, synchronous oscillation, memory wall |
-| 017 | [Neurons and perceptrons: the MP model, Hebbian learning and the XOR dilemma](notes/003-人工神经网络/017-神经元与感知器：MP 模型、赫布学习与异或困境.md) | Threshold logic unit, Hebbian rule, linear separability and convergence |
+| 017 | [Neurons and perceptrons: the MP model, Hebbian learning and the XOR dilemma](notes/003-人工神经网络/017-神经元与感知器：MP%20模型、赫布学习与异或困境.md) | Threshold logic unit, Hebbian rule, linear separability and convergence |
 | 018 | [Multilayer perceptrons: hidden layers, backpropagation and gradient descent](notes/003-人工神经网络/018-多层感知器：隐藏层、反向传播与梯度下降.md) | Squared error, chain rule, local gradient, universal approximation |
-| 019 | [Radial basis function networks: local approximation, receptive fields and k-means training](notes/003-人工神经网络/019-径向基函数网络：局部逼近、感受野与 K 均值训练.md) | Gaussian function, interpolation, recursive least squares |
+| 019 | [Radial basis function networks: local approximation, receptive fields and k-means training](notes/003-人工神经网络/019-径向基函数网络：局部逼近、感受野与%20K%20均值训练.md) | Gaussian function, interpolation, recursive least squares |
 | 020 | [Self-organizing maps: competitive learning, lateral inhibition and topological ordering](notes/003-人工神经网络/020-自组织特征映射：竞争学习、侧向抑制与拓扑排序.md) | Winner-takes-all, neighborhood function, vector quantization, U-matrix |
 | 021 | [Fuzzy neural networks: fuzzy sets, level sets and genetic algorithms](notes/003-人工神经网络/021-模糊神经网络：模糊集合、水平集与遗传算法.md) | Membership degree, extension principle, cutoff point, conjugate gradient |
 
@@ -72,14 +72,14 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 
 | No. | Note | Topics |
 | --- | --- | --- |
-| 022 | [Deep learning overview: Deep Blue vs. AlphaGo, hierarchical abstraction and engineering conditions](notes/004-深度学习/022-深度学习概述：深蓝与 AlphaGo、层级抽象与工程条件.md) | Deep Blue and AlphaGo, hierarchical features, data and compute |
+| 022 | [Deep learning overview: Deep Blue vs. AlphaGo, hierarchical abstraction and engineering conditions](notes/004-深度学习/022-深度学习概述：深蓝与%20AlphaGo、层级抽象与工程条件.md) | Deep Blue and AlphaGo, hierarchical features, data and compute |
 | 023 | [Deep feedforward networks: universal approximation, loss functions and activation functions](notes/004-深度学习/023-深度前馈网络：通用逼近、损失函数与激活函数.md) | Universal approximation theorem, cross-entropy, ReLU |
 | 024 | [Regularization: data augmentation, weight sharing and weight decay](notes/004-深度学习/024-正则化：数据增强、参数共享与权重衰减.md) | Data augmentation, Dropout, L1/L2, early stopping |
-| 025 | [Optimization: ill-conditioned Hessian, SGD and momentum](notes/004-深度学习/025-优化：病态 Hessian、随机梯度下降与动量法.md) | Condition number, saddle points, variance reduction, momentum |
+| 025 | [Optimization: ill-conditioned Hessian, SGD and momentum](notes/004-深度学习/025-优化：病态%20Hessian、随机梯度下降与动量法.md) | Condition number, saddle points, variance reduction, momentum |
 | 026 | [Autoencoders: undercomplete coding, stacked pre-training and variational generation](notes/004-深度学习/026-自编码器：欠完备编码、栈式预训练与变分生成.md) | Bottleneck representation, stacked pre-training, denoising, VAE |
-| 027 | [Deep reinforcement learning: Markov decision processes, DQN and policy gradients](notes/004-深度学习/027-深度强化学习：马尔可夫决策、深度 Q 网络与策略梯度.md) | MDP, DQN, policy gradient, model-based methods |
+| 027 | [Deep reinforcement learning: Markov decision processes, DQN and policy gradients](notes/004-深度学习/027-深度强化学习：马尔可夫决策、深度%20Q%20网络与策略梯度.md) | MDP, DQN, policy gradient, model-based methods |
 
-Sections after deep learning are still being organised: the directories for 005 onwards are in place, and their notes will be added to this index as they are written.
+Sections after deep learning are still planned: the directory for 005 has not been created yet, and its notes will be added to this index once written.
 
 ## Planned Sections
 

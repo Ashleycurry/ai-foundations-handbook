@@ -2,7 +2,7 @@
 
 [中文](README.md) | [English](README-English.md)
 
-This repository collects study notes on artificial intelligence foundations, organised across six sections: introduction, mathematical foundations, machine learning, artificial neural networks, deep learning, and neural networks under deep learning frameworks. Sixteen notes (000-015) are finished and proofread so far. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
+This repository collects study notes on artificial intelligence foundations, organised across six sections: introduction, mathematical foundations, machine learning, artificial neural networks, deep learning, and neural networks under deep learning frameworks. Twenty-two notes (000-021) are finished and proofread so far. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
 
 ## Repository Layout
 
@@ -22,9 +22,9 @@ ai-foundations-handbook/
 
 ## Notes Index
 
-Notes are organised as "section / number", with file names such as `007-机器学习-主题.md`. Each note ends with a glossary table (term / full name / abbreviation / brief description).
+Notes are organised as "section / number", with file names such as `007-机器学习概论：假设空间、泛化误差与模型评估.md`, where the topic comes before the colon and the subtitle after it. Each note ends with a glossary table (term / full name / abbreviation / brief description).
 
-Reading order: start with 000 for the big picture, then work through 001-006 for the mathematical foundations, and finally move on to 007-015 for the classic machine learning algorithms. Each note also contains blockquotes labelled "新手提示" (beginner tips) that explain the terms and formulas most likely to trip up newcomers.
+Reading order: start with 000 for the big picture, then work through 001-006 for the mathematical foundations, move on to 007-015 for the classic machine learning algorithms, and finish with 016-021 on neural network structures. Each note also contains blockquotes labelled "新手提示" (beginner tips) that explain the terms and formulas most likely to trip up newcomers.
 
 ### 000 Introduction
 
@@ -57,15 +57,20 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 | 014 | [Clustering: distance measures, k-means and DBSCAN](notes/002-机器学习/014-聚类分析：距离度量、k 均值与 DBSCAN.md) | Hierarchical clustering, EM, density-reachability |
 | 015 | [Dimensionality reduction: PCA, kernel PCA and feature selection](notes/002-机器学习/015-降维学习：主成分分析、核化 PCA 与特征选择.md) | Covariance matrix, eigendecomposition, wrapper and filter methods |
 
-Sections after machine learning are still being organised: the directories for 003 onwards are in place, and their notes will be added to this index as they are written.
-
-## Planned Sections
-
 ### 003 Artificial Neural Networks
 
-- Physiological background: from biological to artificial neurons.
-- Perceptron, linear separability, and the XOR problem.
-- Multi-layer structures, activation functions, and universal approximation.
+| No. | Note | Topics |
+| --- | --- | --- |
+| 016 | [Physiological background of neural networks: neurons, cognitive hierarchy and the limits of silicon](notes/003-人工神经网络/016-神经网络的生理学背景：神经元、认知层级与硅基局限.md) | Connectionism, perceptual objects, synchronous oscillation, memory wall |
+| 017 | [Neurons and perceptrons: the MP model, Hebbian learning and the XOR dilemma](notes/003-人工神经网络/017-神经元与感知器：MP 模型、赫布学习与异或困境.md) | Threshold logic unit, Hebbian rule, linear separability and convergence |
+| 018 | [Multilayer perceptrons: hidden layers, backpropagation and gradient descent](notes/003-人工神经网络/018-多层感知器：隐藏层、反向传播与梯度下降.md) | Squared error, chain rule, local gradient, universal approximation |
+| 019 | [Radial basis function networks: local approximation, receptive fields and k-means training](notes/003-人工神经网络/019-径向基函数网络：局部逼近、感受野与 K 均值训练.md) | Gaussian function, interpolation, recursive least squares |
+| 020 | [Self-organizing maps: competitive learning, lateral inhibition and topological ordering](notes/003-人工神经网络/020-自组织特征映射：竞争学习、侧向抑制与拓扑排序.md) | Winner-takes-all, neighborhood function, vector quantization, U-matrix |
+| 021 | [Fuzzy neural networks: fuzzy sets, level sets and genetic algorithms](notes/003-人工神经网络/021-模糊神经网络：模糊集合、水平集与遗传算法.md) | Membership degree, extension principle, cutoff point, conjugate gradient |
+
+Sections after neural networks are still being organised: the directories for 004 onwards are in place, and their notes will be added to this index as they are written.
+
+## Planned Sections
 
 ### 004 Deep Learning
 
@@ -82,7 +87,7 @@ Sections after machine learning are still being organised: the directories for 0
 ## How to Use
 
 - Materials in `docs/` are numbered by topic, for example `001-xxx.pdf`.
-- Notes in `notes/` are grouped by section; file names follow "number-section-topic" for easy sorting and lookup.
+- Notes in `notes/` are grouped by section; file names follow "number-topic: subtitle".
 - Formulas in the notes are written in LaTeX and render directly on GitHub. For local reading, use an editor with math support (e.g. VS Code with Markdown Preview Enhanced).
 - Inline math is mostly replaced by plain-text symbols; only a few block-level formulas are kept, so the notes stay readable in any terminal.
 

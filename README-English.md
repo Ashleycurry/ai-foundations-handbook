@@ -47,15 +47,15 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 
 | No. | Note | Topics |
 | --- | --- | --- |
-| 007 | [Machine learning overview: peaks to climb, seas to cross](notes/002-机器学习/007-机器学习概论：数山有路，学海无涯.md) | Hypothesis space, overfitting, cross validation, generative vs discriminative |
-| 008 | [Linear regression: simple, not simplistic](notes/002-机器学习/008-线性回归：简约而不简单.md) | Least squares, maximum likelihood, ridge, LASSO |
-| 009 | [Naive Bayes: the great way is simple](notes/002-机器学习/009-朴素贝叶斯方法：大道至简.md) | Bayes decision, conditional independence, Laplace smoothing |
-| 010 | [Logistic regression: from simple to intricate](notes/002-机器学习/010-逻辑回归：衍化至繁.md) | Sigmoid, maximum likelihood, log-odds, Softmax |
-| 011 | [Decision trees: step by step, rule by rule](notes/002-机器学习/011-决策树：步步为营，有章可循.md) | Information gain, gain ratio, Gini, pruning |
-| 012 | [Support vector machines: when exhausted, change](notes/002-机器学习/012-支持向量机：穷则变，变则通.md) | Margin maximization, soft margin, kernel trick, SMO |
-| 013 | [Ensemble learning: three cobblers outwit Zhuge Liang](notes/002-机器学习/013-集成学习：三个臭皮匠，赛过诸葛亮.md) | Boosting, Bagging, AdaBoost, random forest |
-| 014 | [Cluster analysis: birds of a feather flock together](notes/002-机器学习/014-聚类分析：物以类聚，人以群分.md) | Distance measures, k-means, EM, DBSCAN |
-| 015 | [Dimensionality reduction: use the steel on the blade](notes/002-机器学习/015-降维学习：好钢用在刀刃上.md) | PCA, kernel PCA, feature selection |
+| 007 | [Machine learning overview: hypothesis space, generalization error and model evaluation](notes/002-机器学习/007-机器学习概论：假设空间、泛化误差与模型评估.md) | Overfitting, cross validation, generative vs discriminative |
+| 008 | [Linear regression: least squares, regularization and GLM](notes/002-机器学习/008-线性回归：最小二乘、正则化与广义线性模型.md) | Maximum likelihood, ridge, LASSO, basis functions |
+| 009 | [Naive Bayes: Bayes decision, conditional independence and smoothing](notes/002-机器学习/009-朴素贝叶斯：贝叶斯决策、条件独立与平滑.md) | Priors and posteriors, MLE, text classification |
+| 010 | [Logistic regression: log-odds, maximum likelihood and Softmax](notes/002-机器学习/010-逻辑回归：对数几率、最大似然与 Softmax.md) | Sigmoid, gradient descent, multiclass extension |
+| 011 | [Decision trees: information gain, Gini index and pruning](notes/002-机器学习/011-决策树：信息增益、基尼系数与剪枝.md) | ID3, C4.5, CART, pre-pruning and post-pruning |
+| 012 | [Support vector machines: margin maximization, kernel trick and SMO](notes/002-机器学习/012-支持向量机：间隔最大化、核技巧与 SMO.md) | Hard margin, soft margin, dual problem, support vectors |
+| 013 | [Ensemble learning: Boosting, Bagging and random forests](notes/002-机器学习/013-集成学习：Boosting、Bagging 与随机森林.md) | AdaBoost, bootstrap sampling, bias and variance |
+| 014 | [Clustering: distance measures, k-means and DBSCAN](notes/002-机器学习/014-聚类分析：距离度量、k 均值与 DBSCAN.md) | Hierarchical clustering, EM, density-reachability |
+| 015 | [Dimensionality reduction: PCA, kernel PCA and feature selection](notes/002-机器学习/015-降维学习：主成分分析、核化 PCA 与特征选择.md) | Covariance matrix, eigendecomposition, wrapper and filter methods |
 
 Sections after machine learning are still being organised: the directories for 003 onwards are in place, and their notes will be added to this index as they are written.
 

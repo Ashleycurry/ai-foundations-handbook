@@ -2,7 +2,7 @@
 
 [中文](README.md) | [English](README-English.md)
 
-This repository collects study notes on artificial intelligence foundations, organised across six sections: introduction, mathematical foundations, machine learning, artificial neural networks, deep learning, and neural networks under deep learning frameworks. Twenty-eight notes (000-027) are finished, and each has been checked for formulas, worked examples and cross-references. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
+This repository collects study notes on artificial intelligence foundations, organised across six sections: introduction, mathematical foundations, machine learning, artificial neural networks, deep learning, and neural networks under deep learning frameworks. Thirty-three notes (000-032) are finished, and each has been checked for formulas, worked examples and cross-references. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
 
 ## Repository Layout
 
@@ -17,14 +17,14 @@ ai-foundations-handbook/
     ├── 002-机器学习/                 # Nine classic machine learning methods
     ├── 003-人工神经网络/             # Neurons, perceptrons, and network structures
     ├── 004-深度学习/                 # Deep networks and training techniques
-    └── 005-深度学习框架下的神经网络/ # Planned: framework implementations and engineering practice
+    └── 005-深度学习框架下的神经网络/ # Deep belief networks, convolution, recurrence and memory networks
 ```
 
 ## Notes Index
 
 Notes are organised as "section / number", with file names such as `007-机器学习概论：假设空间、泛化误差与模型评估.md`, where the topic comes before the colon and the subtitle after it. Each note ends with a glossary table (term / full name / abbreviation / brief description).
 
-Reading order: start with 000 for the big picture, then work through 001-006 for the mathematical foundations, move on to 007-015 for the classic machine learning algorithms, and finish with 016-021 on neural network structures and 022-027 on deep learning. Each note also contains blockquotes labelled "新手提示" (beginner tips) that explain the terms and formulas most likely to trip up newcomers.
+Reading order: start with 000 for the big picture, then work through 001-006 for the mathematical foundations, move on to 007-015 for the classic machine learning algorithms, and finish with 016-021 on neural network structures, 022-027 on deep learning, and 028-032 on deep belief networks, convolutional networks, recurrent networks, generative adversarial networks and long short-term memory. Each note also contains blockquotes labelled "新手提示" (beginner tips) that explain the terms and formulas most likely to trip up newcomers.
 
 ### 000 Introduction
 
@@ -79,15 +79,15 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 | 026 | [Autoencoders: undercomplete coding, stacked pre-training and variational generation](notes/004-深度学习/026-自编码器：欠完备编码、栈式预训练与变分生成.md) | Bottleneck representation, stacked pre-training, denoising, VAE |
 | 027 | [Deep reinforcement learning: Markov decision processes, DQN and policy gradients](notes/004-深度学习/027-深度强化学习：马尔可夫决策、深度%20Q%20网络与策略梯度.md) | MDP, DQN, policy gradient, model-based methods |
 
-Sections after deep learning are still planned: the directory for 005 has not been created yet, and its notes will be added to this index once written.
-
-## Planned Sections
-
 ### 005 Neural Networks under Deep Learning Frameworks
 
-- Tensors, automatic differentiation, and computational graphs in mainstream frameworks.
-- Model building, training, and tuning workflows for common tasks.
-- Model inference deployment and engineering practices.
+| No. | Note | Topics |
+| --- | --- | --- |
+| 028 | [Deep belief networks: restricted Boltzmann machines, contrastive divergence and layer-wise pre-training](notes/005-深度学习框架下的神经网络/028-深度信念网络：受限玻尔兹曼机、对比散度与逐层预训练.md) | RBM, contrastive divergence, layer-wise pre-training |
+| 029 | [Convolutional neural networks: convolution, sparse interaction and feature maps](notes/005-深度学习框架下的神经网络/029-卷积神经网络：卷积运算、稀疏感知与特征映射.md) | Kernels, parameter sharing, pooling, residual networks |
+| 030 | [Recurrent neural networks: temporal weight sharing, bidirectional structure and recursive networks](notes/005-深度学习框架下的神经网络/030-循环神经网络：时序参数共享、双向结构与递归网络.md) | BPTT, bidirectional RNN, recursive networks |
+| 031 | [Generative adversarial networks: zero-sum games, minimax and training difficulties](notes/005-深度学习框架下的神经网络/031-生成式对抗网络：零和博弈、极小极大与训练难题.md) | Generator, discriminator, JS divergence, mode collapse |
+| 032 | [Long short-term memory: gating, memory cells and gradient vanishing](notes/005-深度学习框架下的神经网络/032-长短期记忆网络：门控机制、记忆单元与梯度弥散.md) | Forget gate, input gate, output gate, peephole connections |
 
 ## How to Use
 

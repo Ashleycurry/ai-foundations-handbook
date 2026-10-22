@@ -12,15 +12,19 @@
 
 [中文](README.md) | [English](README-English.md)
 
+[Content Map](#content-map) · [Reading Paths](#reading-paths) · [Notes Index](#notes-index) · [Typography Conventions](#typography-conventions)
+
 </div>
 
 ---
 
-## Why this handbook
+## A phenomenon to start with
 
-Most introductory material stops at "get one model running": install a framework, run the example, watch the accuracy go up, and consider the topic learned. But the moment you need to change a network structure, explain where one term in a loss function comes from, or judge which data a method will fail on, the middle of the knowledge chain turns out to be missing.
+> 98% on the training set, 92% on validation, 70% after a week in production.
 
-These notes are organised around closing that gap: every conclusion is derived from its premises, every symbol is defined, and every method is described together with the conditions under which it holds and the data on which it breaks down.
+Problems like this rarely yield to more tuning. Trace them back and the cause is usually not one wrong line of code but three gaps opening at once: where generalization error comes from, why gradients disappear, and which data violates a model's assumptions.
+
+These notes are ordered to close those gaps: every conclusion is derived from its premises, every symbol is defined, and every method is described together with the conditions under which it holds and the data on which it breaks down.
 
 - **Verifiable formulas** — 258 block-level formulas, each checked term by term for variable meaning and derivation;
 - **Traceable terminology** — every term carries its English full name and abbreviation at first use, then a glossary table at the end;
@@ -31,34 +35,26 @@ These notes are organised around closing that gap: every conclusion is derived f
 
 ## Content Map
 
-The seven sections form one progressive line: mathematics supplies the tools, machine learning the paradigms, neural networks the structures, deep learning the training methods, and the last two sections look inward at mainstream architectures and outward at routes beyond deep learning.
+The thirty-second version: `001`–`006` supply the mathematical tools, `007`–`015` the algorithm paradigms, `016`–`032` take apart network structures and training methods, and `033`–`036` look beyond deep learning.
 
 ```mermaid
-flowchart TB
-    ROOT["AI Foundations Handbook<br/>37 notes · 7 sections"]
-    ROOT --> A["000 Introduction<br/>1 note"]
-    ROOT --> B["001 Mathematical Foundations<br/>6 notes"]
-    ROOT --> C["002 Machine Learning<br/>9 notes"]
-    ROOT --> D["003 Artificial Neural Networks<br/>6 notes"]
-    ROOT --> E["004 Deep Learning<br/>6 notes"]
-    ROOT --> F["005 Networks under Frameworks<br/>5 notes"]
-    ROOT --> G["006 Beyond Deep Learning<br/>4 notes"]
-    F -.-> G
+flowchart LR
+    A["000<br/>Intro"] --> B["001<br/>Math"] --> C["002<br/>ML"] --> D["003<br/>ANN"] --> E["004<br/>DL"] --> F["005<br/>Backbones"]
+    E -. beyond .-> G["006<br/>Beyond DL"]
+    B -. tools .-> F
     classDef base fill:#f6f8fa,stroke:#d0d7de,stroke-width:1px,color:#1f2328
-    classDef core fill:#ddf4ff,stroke:#54aeff,color:#0969da
-    class A,B,C,D,E,F,G base
-    class ROOT core
+    classDef out fill:#fff8c5,stroke:#d4a72c,stroke-width:1px,color:#7d4e00
+    class A,B,C,D,E,F base
+    class G out
 ```
 
-| Section | Notes | Count | Core topics | What you can do afterwards |
-| --- | --- | --- | --- | --- |
-| `000` Introduction | 000 | 1 | Technical routes, knowledge map | Place every topic on a global map |
-| `001` Mathematical Foundations | 001–006 | 6 | Linear algebra, probability, statistics, optimization, information theory, formal logic | Read every formula in the later sections |
-| `002` Machine Learning | 007–015 | 9 | Overview, linear regression, naive Bayes, logistic regression, decision trees, SVM, ensembles, clustering, dimensionality reduction | Derive classical losses and update rules by hand |
-| `003` Artificial Neural Networks | 016–021 | 6 | Biological background, perceptrons, MLPs, RBF networks, SOMs, fuzzy networks | See how network structures evolved step by step |
-| `004` Deep Learning | 022–027 | 6 | Overview, feedforward networks, regularization, optimization, autoencoders, deep RL | Train and tune a deep model on your own |
-| `005` Neural Networks under Frameworks | 028–032 | 5 | DBN, CNN, RNN, GAN, LSTM | Understand the motivation and structure of mainstream backbones |
-| `006` AI Beyond Deep Learning | 033–036 | 4 | Graphical models, swarm intelligence, transfer learning, knowledge graphs | Step outside deep learning and see the other route |
+- **`000` Introduction** · 1 note · technical routes, knowledge map — place every topic on a global map.
+- **`001` Mathematical Foundations** · 6 notes · linear algebra, probability, statistics, optimization, information theory, formal logic — read every formula in the later sections.
+- **`002` Machine Learning** · 9 notes · overview, regression, naive Bayes, logistic regression, decision trees, SVM, ensembles, clustering, dimensionality reduction — derive classical losses and update rules by hand.
+- **`003` Artificial Neural Networks** · 6 notes · biological background, perceptrons, MLPs, RBF networks, SOMs, fuzzy networks — see how network structures evolved step by step.
+- **`004` Deep Learning** · 6 notes · overview, feedforward networks, regularization, optimization, autoencoders, deep RL — train and tune a deep model yourself.
+- **`005` Neural Networks under Frameworks** · 5 notes · DBN, CNN, RNN, GAN, LSTM — understand the motivation and structure of mainstream backbones.
+- **`006` AI Beyond Deep Learning** · 4 notes · graphical models, swarm intelligence, transfer learning, knowledge graphs — step outside deep learning and see the other route.
 
 ## Reading Paths
 

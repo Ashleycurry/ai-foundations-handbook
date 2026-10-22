@@ -6,7 +6,7 @@
 
 ![Notes](https://img.shields.io/badge/notes-37-2f81f7?style=flat-square)
 ![Sections](https://img.shields.io/badge/sections-7-8250df?style=flat-square)
-![Text](https://img.shields.io/badge/text-281k_chars-1f883d?style=flat-square)
+![Text](https://img.shields.io/badge/text-299k_chars-1f883d?style=flat-square)
 ![Formulas](https://img.shields.io/badge/formulas-258-bc4c00?style=flat-square)
 [![License](https://img.shields.io/badge/license-MIT-0969da?style=flat-square)](LICENSE)
 
@@ -31,7 +31,7 @@ These notes are ordered to close those gaps: every conclusion is derived from it
 - **Consistent structure** — all 37 notes share one template, so you always know where to look for the conclusion;
 - **Engineering-minded** — each method includes its limitations and failure modes, not just why it works.
 
-> Roughly 281,000 characters and 9,083 lines of Markdown, plus 113 "beginner tip" blocks dedicated to the terms and formulas that trip people up most.
+> Roughly 299,000 characters and 9,613 lines of Markdown, plus 113 "beginner tip" blocks dedicated to the terms and formulas that trip people up most.
 
 ## Content Map
 
@@ -194,9 +194,11 @@ All 37 notes share one template: learn it once and you have learned them all.
 | Part | Purpose |
 | --- | --- |
 | H1 title | "Topic: subtitle", identical to the file name with the number prefix removed |
+| 读前须知 (before you read) | Three opening lines: prerequisites, where this note sits on the map, what you can do afterwards |
 | Sections | Major sections numbered 一、二、三, subsections 1.1, 1.2 — headings state conclusions, not labels |
 | **补充说明** (supplementary note) | Expands the error-prone points: extra derivation, concept comparison, engineering trade-offs |
 | 新手提示 (beginner tip) | Blockquote explaining the terms and formulas most likely to block a newcomer |
+| **四个常见误区** (common misconceptions) | Four widespread but wrong beliefs, corrected right before the recap |
 | 要点回顾 (key points) | Numbered list, usually 10–12 items, usable as a revision checklist |
 | 名词汇总 (glossary) | Table of term / full English name / abbreviation / brief description |
 

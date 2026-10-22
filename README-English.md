@@ -1,39 +1,114 @@
+<div align="center">
+
 # AI Foundations Handbook
+
+**From linear algebra to knowledge graphs: 37 Chinese-language AI notes, verifiable line by line**
+
+![Notes](https://img.shields.io/badge/notes-37-2f81f7?style=flat-square)
+![Sections](https://img.shields.io/badge/sections-7-8250df?style=flat-square)
+![Text](https://img.shields.io/badge/text-281k_chars-1f883d?style=flat-square)
+![Formulas](https://img.shields.io/badge/formulas-258-bc4c00?style=flat-square)
+[![License](https://img.shields.io/badge/license-MIT-0969da?style=flat-square)](LICENSE)
 
 [中文](README.md) | [English](README-English.md)
 
-This repository collects study notes on artificial intelligence foundations, organised across seven sections: introduction, mathematical foundations, machine learning, artificial neural networks, deep learning, neural networks under deep learning frameworks, and AI beyond deep learning. Thirty-seven notes (000-036) are finished, and each has been checked for formulas, worked examples and cross-references. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
+</div>
 
-## Repository Layout
+---
 
-```text
-ai-foundations-handbook/
-├── README.md
-├── README-English.md
-├── docs/                            # Course slides and PDF / DOCX materials
-└── notes/
-    ├── 000-开篇/                     # Introduction and technical routes
-    ├── 001-数学基础/                 # Linear algebra, probability, statistics, optimization, information theory, logic
-    ├── 002-机器学习/                 # Nine classic machine learning methods
-    ├── 003-人工神经网络/             # Neurons, perceptrons, and network structures
-    ├── 004-深度学习/                 # Deep networks and training techniques
-    ├── 005-深度学习框架下的神经网络/ # Deep belief networks, convolution, recurrence and memory networks
-    └── 006-深度学习之外的人工智能/   # Probabilistic graphical models, swarm intelligence, transfer learning and knowledge graphs
+## Why this handbook
+
+Most introductory material stops at "get one model running": install a framework, run the example, watch the accuracy go up, and consider the topic learned. But the moment you need to change a network structure, explain where one term in a loss function comes from, or judge which data a method will fail on, the middle of the knowledge chain turns out to be missing.
+
+These notes are organised around closing that gap: every conclusion is derived from its premises, every symbol is defined, and every method is described together with the conditions under which it holds and the data on which it breaks down.
+
+- **Verifiable formulas** — 258 block-level formulas, each checked term by term for variable meaning and derivation;
+- **Traceable terminology** — every term carries its English full name and abbreviation at first use, then a glossary table at the end;
+- **Consistent structure** — all 37 notes share one template, so you always know where to look for the conclusion;
+- **Engineering-minded** — each method includes its limitations and failure modes, not just why it works.
+
+> Roughly 281,000 characters and 9,083 lines of Markdown, plus 113 "beginner tip" blocks dedicated to the terms and formulas that trip people up most.
+
+## Content Map
+
+The seven sections form one progressive line: mathematics supplies the tools, machine learning the paradigms, neural networks the structures, deep learning the training methods, and the last two sections look inward at mainstream architectures and outward at routes beyond deep learning.
+
+```mermaid
+flowchart TB
+    ROOT["AI Foundations Handbook<br/>37 notes · 7 sections"]
+    ROOT --> A["000 Introduction<br/>1 note"]
+    ROOT --> B["001 Mathematical Foundations<br/>6 notes"]
+    ROOT --> C["002 Machine Learning<br/>9 notes"]
+    ROOT --> D["003 Artificial Neural Networks<br/>6 notes"]
+    ROOT --> E["004 Deep Learning<br/>6 notes"]
+    ROOT --> F["005 Networks under Frameworks<br/>5 notes"]
+    ROOT --> G["006 Beyond Deep Learning<br/>4 notes"]
+    F -.-> G
+    classDef base fill:#f6f8fa,stroke:#d0d7de,stroke-width:1px,color:#1f2328
+    classDef core fill:#ddf4ff,stroke:#54aeff,color:#0969da
+    class A,B,C,D,E,F,G base
+    class ROOT core
 ```
+
+| Section | Notes | Count | Core topics | What you can do afterwards |
+| --- | --- | --- | --- | --- |
+| `000` Introduction | 000 | 1 | Technical routes, knowledge map | Place every topic on a global map |
+| `001` Mathematical Foundations | 001–006 | 6 | Linear algebra, probability, statistics, optimization, information theory, formal logic | Read every formula in the later sections |
+| `002` Machine Learning | 007–015 | 9 | Overview, linear regression, naive Bayes, logistic regression, decision trees, SVM, ensembles, clustering, dimensionality reduction | Derive classical losses and update rules by hand |
+| `003` Artificial Neural Networks | 016–021 | 6 | Biological background, perceptrons, MLPs, RBF networks, SOMs, fuzzy networks | See how network structures evolved step by step |
+| `004` Deep Learning | 022–027 | 6 | Overview, feedforward networks, regularization, optimization, autoencoders, deep RL | Train and tune a deep model on your own |
+| `005` Neural Networks under Frameworks | 028–032 | 5 | DBN, CNN, RNN, GAN, LSTM | Understand the motivation and structure of mainstream backbones |
+| `006` AI Beyond Deep Learning | 033–036 | 4 | Graphical models, swarm intelligence, transfer learning, knowledge graphs | Step outside deep learning and see the other route |
+
+## Reading Paths
+
+### Path 1 — One-week overview
+
+If time is short, these five notes form a minimal complete chain:
+
+`000 Introduction` → `007 ML Overview` → `018 Multilayer Perceptron` → `023 Deep Feedforward Networks` → `029 Convolutional Networks`
+
+Start from "what routes AI has taken", build up the notions of generalization and evaluation, see how backpropagation trains a network, and finish on a concrete architecture.
+
+### Path 2 — Full run
+
+Read all 37 notes in numerical order. Notes within a section depend on each other; when jumping across sections, go back and fill in the corresponding mathematics first:
+
+1. `000` → `001`–`006`: tools before algorithms;
+2. `007`–`015`: classical machine learning, focused on losses and regularization;
+3. `016`–`021`: the evolution of network structures — watch for the biological or geometric intuition behind each rule;
+4. `022`–`027`: training techniques, best read against optimization and information theory in 001–006;
+5. `028`–`032`: mainstream backbones — keep the original papers at hand;
+6. `033`–`036`: non-deep-learning routes, useful for understanding the limits of deep learning.
+
+### Path 3 — Lookup
+
+| Looking for | Go to |
+| --- | --- |
+| Overfitting, bias and variance | `007`, `024` |
+| Vanishing and exploding gradients | `025`, `030`, `032` |
+| Attention mechanisms | `032` |
+| Generative models | `026`, `031` |
+| Receptive fields and parameter sharing | `029` |
+| Graphical models and approximate inference | `033` |
+| Pre-training, fine-tuning and negative transfer | `035` |
+| Knowledge representation and reasoning | `006`, `036` |
 
 ## Notes Index
 
-Notes are organised as "section / number", with file names such as `007-机器学习概论：假设空间、泛化误差与模型评估.md`, where the topic comes before the colon and the subtitle after it. Each note ends with a glossary table (term / full name / abbreviation / brief description).
+Grouped by section. Click a section title to expand its table of contents.
 
-Reading order: start with 000 for the big picture, then work through 001-006 for the mathematical foundations, move on to 007-015 for the classic machine learning algorithms, and finish with 016-021 on neural network structures, 022-027 on deep learning, 028-032 on deep belief networks, convolutional networks, recurrent networks, generative adversarial networks and long short-term memory, and 033-036 on probabilistic graphical models, swarm intelligence, transfer learning and knowledge graphs. Each note also contains blockquotes labelled "新手提示" (beginner tips) that explain the terms and formulas most likely to trip up newcomers.
-
-### 000 Introduction
+<details>
+<summary><b>000 开篇 (Introduction)</b> · 1 note</summary>
 
 | No. | Note | Topics |
 | --- | --- | --- |
 | 000 | [Introduction to AI: from hype to technical routes](notes/000-开篇/000-人工智能导论：从热潮到技术路线.md) | Technical routes, knowledge map |
 
-### 001 Mathematical Foundations
+</details>
+
+<details>
+<summary><b>001 数学基础 (Mathematical Foundations)</b> · 6 notes</summary>
 
 | No. | Note | Topics |
 | --- | --- | --- |
@@ -44,7 +119,10 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 | 005 | [Information Theory: entropy, mutual information, and maximum entropy](notes/001-数学基础/005-信息论：熵、互信息与最大熵.md) | Entropy, KL divergence, MaxEnt |
 | 006 | [Formal Logic: predicate logic, production systems, and incompleteness](notes/001-数学基础/006-形式逻辑：谓词逻辑、产生式系统与不完备性.md) | Knowledge representation, inference, Gödel |
 
-### 002 Machine Learning
+</details>
+
+<details>
+<summary><b>002 机器学习 (Machine Learning)</b> · 9 notes</summary>
 
 | No. | Note | Topics |
 | --- | --- | --- |
@@ -58,7 +136,10 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 | 014 | [Clustering: distance measures, k-means and DBSCAN](notes/002-机器学习/014-聚类分析：距离度量、k%20均值与%20DBSCAN.md) | Hierarchical clustering, EM, density-reachability |
 | 015 | [Dimensionality reduction: PCA, kernel PCA and feature selection](notes/002-机器学习/015-降维学习：主成分分析、核化%20PCA%20与特征选择.md) | Covariance matrix, eigendecomposition, wrapper and filter methods |
 
-### 003 Artificial Neural Networks
+</details>
+
+<details>
+<summary><b>003 人工神经网络 (Artificial Neural Networks)</b> · 6 notes</summary>
 
 | No. | Note | Topics |
 | --- | --- | --- |
@@ -69,7 +150,10 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 | 020 | [Self-organizing maps: competitive learning, lateral inhibition and topological ordering](notes/003-人工神经网络/020-自组织特征映射：竞争学习、侧向抑制与拓扑排序.md) | Winner-takes-all, neighborhood function, vector quantization, U-matrix |
 | 021 | [Fuzzy neural networks: fuzzy sets, level sets and genetic algorithms](notes/003-人工神经网络/021-模糊神经网络：模糊集合、水平集与遗传算法.md) | Membership degree, extension principle, cutoff point, conjugate gradient |
 
-### 004 Deep Learning
+</details>
+
+<details>
+<summary><b>004 深度学习 (Deep Learning)</b> · 6 notes</summary>
 
 | No. | Note | Topics |
 | --- | --- | --- |
@@ -80,7 +164,10 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 | 026 | [Autoencoders: undercomplete coding, stacked pre-training and variational generation](notes/004-深度学习/026-自编码器：欠完备编码、栈式预训练与变分生成.md) | Bottleneck representation, stacked pre-training, denoising, VAE |
 | 027 | [Deep reinforcement learning: Markov decision processes, DQN and policy gradients](notes/004-深度学习/027-深度强化学习：马尔可夫决策、深度%20Q%20网络与策略梯度.md) | MDP, DQN, policy gradient, model-based methods |
 
-### 005 Neural Networks under Deep Learning Frameworks
+</details>
+
+<details>
+<summary><b>005 深度学习框架下的神经网络 (Neural Networks under Frameworks)</b> · 5 notes</summary>
 
 | No. | Note | Topics |
 | --- | --- | --- |
@@ -90,7 +177,10 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 | 031 | [Generative adversarial networks: zero-sum games, minimax and training difficulties](notes/005-深度学习框架下的神经网络/031-生成式对抗网络：零和博弈、极小极大与训练难题.md) | Generator, discriminator, JS divergence, mode collapse |
 | 032 | [Long short-term memory: gating, memory cells and gradient vanishing](notes/005-深度学习框架下的神经网络/032-长短期记忆网络：门控机制、记忆单元与梯度弥散.md) | Forget gate, input gate, output gate, peephole connections |
 
-### 006 AI Beyond Deep Learning
+</details>
+
+<details>
+<summary><b>006 深度学习之外的人工智能 (AI Beyond Deep Learning)</b> · 4 notes</summary>
 
 | No. | Note | Topics |
 | --- | --- | --- |
@@ -99,18 +189,75 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 | 035 | [Transfer learning: source and target domains, four method families and meta-learning](notes/006-深度学习之外的人工智能/035-迁移学习：源域目标域、四类迁移方法与元学习.md) | Source and target domains, negative transfer, pre-training and fine-tuning, meta-learning |
 | 036 | [Knowledge graphs: inference, soft logic and distributed representation](notes/006-深度学习之外的人工智能/036-知识图谱：知识推理、软性逻辑与分布式表示.md) | Triple, path ranking, Markov logic network, TransE |
 
-## How to Use
+</details>
 
-- Materials in `docs/` are numbered by topic, for example `001-xxx.pdf`.
-- Notes in `notes/` are grouped by section; file names follow "number-topic: subtitle".
-- Formulas in the notes are written in LaTeX and render directly on GitHub. For local reading, use an editor with math support (e.g. VS Code with Markdown Preview Enhanced).
-- Inline math is mostly replaced by plain-text symbols; only a few block-level formulas are kept, so the notes stay readable in any terminal.
-- Review follows three rules: every formula can be verified term by term, every definition or conclusion has a clear source, and every number or cross-reference points to the right note.
+## Anatomy of a Note
 
-## Keywords
+All 37 notes share one template: learn it once and you have learned them all.
 
-`AI Foundations` `Machine Learning` `Linear Algebra` `Probability` `Optimization` `Neural Network` `Deep Learning`
+| Part | Purpose |
+| --- | --- |
+| H1 title | "Topic: subtitle", identical to the file name with the number prefix removed |
+| Sections | Major sections numbered 一、二、三, subsections 1.1, 1.2 — headings state conclusions, not labels |
+| **补充说明** (supplementary note) | Expands the error-prone points: extra derivation, concept comparison, engineering trade-offs |
+| 新手提示 (beginner tip) | Blockquote explaining the terms and formulas most likely to block a newcomer |
+| 要点回顾 (key points) | Numbered list, usually 10–12 items, usable as a revision checklist |
+| 名词汇总 (glossary) | Table of term / full English name / abbreviation / brief description |
+
+## Typography Conventions
+
+These conventions keep the notes readable on GitHub, in a terminal, and in a local editor alike.
+
+- No inline math: symbols such as α, σ, ∇, ⊙ are written as Unicode characters and stay legible without a renderer;
+- Block-level formulas only where the derivation requires them, rendered natively by GitHub — no plugin needed;
+- Chinese text uses curly quotes; terms carry their English full name and abbreviation at first use, then Chinese or the abbreviation only;
+- All files are UTF-8 without BOM and open cleanly on Windows, macOS and Linux.
+
+## Repository Layout
+
+```text
+ai-foundations-handbook/
+├── README.md                        # Chinese documentation
+├── README-English.md                # English version (this file)
+├── LICENSE                          # MIT
+├── docs/                            # Reserved for slides and PDF material, not distributed
+└── notes/
+    ├── 000-开篇/                     # 1 note  · technical routes
+    ├── 001-数学基础/                 # 6 notes · linear algebra, probability, statistics, optimization, information theory, logic
+    ├── 002-机器学习/                 # 9 notes · from overview to dimensionality reduction
+    ├── 003-人工神经网络/             # 6 notes · neurons, perceptrons and network structures
+    ├── 004-深度学习/                 # 6 notes · deep networks and training techniques
+    ├── 005-深度学习框架下的神经网络/ # 5 notes · deep belief networks, convolution, recurrence and memory
+    └── 006-深度学习之外的人工智能/   # 4 notes · graphical models, swarm intelligence, transfer learning, knowledge graphs
+```
+
+File names follow `007-机器学习概论：假设空间、泛化误差与模型评估.md`, with the topic before the colon and the subtitle after it. Links containing spaces are encoded as `%20` in Markdown.
+
+## Reading Locally
+
+```bash
+git clone https://github.com/Ashleycurry/ai-foundations-handbook.git
+cd ai-foundations-handbook
+```
+
+- **Online**: open any note directly on GitHub; formulas are rendered natively;
+- **VS Code**: install Markdown Preview Enhanced or Markdown All in One for LaTeX preview and outline navigation;
+- **Obsidian / Typora**: open `notes/` as the vault root and browse by section.
+
+## Contributing & Feedback
+
+- Found a wrong formula, a mistaken conclusion or an unclear passage? Open an issue with the file name and section number;
+- Better translations of terms or better symbol conventions are welcome in the issue tracker;
+- When quoting or reposting, please cite the source and comply with the MIT license.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+<div align="center">
+
+If these notes help you, a star is appreciated — and issues pointing out mistakes are even more so.
+
+[Back to top](#ai-foundations-handbook)
+
+</div>

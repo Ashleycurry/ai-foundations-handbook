@@ -2,7 +2,7 @@
 
 [中文](README.md) | [English](README-English.md)
 
-This repository collects study notes on artificial intelligence foundations, organised across six sections: introduction, mathematical foundations, machine learning, artificial neural networks, deep learning, and neural networks under deep learning frameworks. Thirty-three notes (000-032) are finished, and each has been checked for formulas, worked examples and cross-references. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
+This repository collects study notes on artificial intelligence foundations, organised across seven sections: introduction, mathematical foundations, machine learning, artificial neural networks, deep learning, neural networks under deep learning frameworks, and AI beyond deep learning. Thirty-seven notes (000-036) are finished, and each has been checked for formulas, worked examples and cross-references. They are written in Chinese, use LaTeX for formulas (rendered natively by GitHub), and end with a glossary table.
 
 ## Repository Layout
 
@@ -17,14 +17,15 @@ ai-foundations-handbook/
     ├── 002-机器学习/                 # Nine classic machine learning methods
     ├── 003-人工神经网络/             # Neurons, perceptrons, and network structures
     ├── 004-深度学习/                 # Deep networks and training techniques
-    └── 005-深度学习框架下的神经网络/ # Deep belief networks, convolution, recurrence and memory networks
+    ├── 005-深度学习框架下的神经网络/ # Deep belief networks, convolution, recurrence and memory networks
+    └── 006-深度学习之外的人工智能/   # Probabilistic graphical models, swarm intelligence, transfer learning and knowledge graphs
 ```
 
 ## Notes Index
 
 Notes are organised as "section / number", with file names such as `007-机器学习概论：假设空间、泛化误差与模型评估.md`, where the topic comes before the colon and the subtitle after it. Each note ends with a glossary table (term / full name / abbreviation / brief description).
 
-Reading order: start with 000 for the big picture, then work through 001-006 for the mathematical foundations, move on to 007-015 for the classic machine learning algorithms, and finish with 016-021 on neural network structures, 022-027 on deep learning, and 028-032 on deep belief networks, convolutional networks, recurrent networks, generative adversarial networks and long short-term memory. Each note also contains blockquotes labelled "新手提示" (beginner tips) that explain the terms and formulas most likely to trip up newcomers.
+Reading order: start with 000 for the big picture, then work through 001-006 for the mathematical foundations, move on to 007-015 for the classic machine learning algorithms, and finish with 016-021 on neural network structures, 022-027 on deep learning, 028-032 on deep belief networks, convolutional networks, recurrent networks, generative adversarial networks and long short-term memory, and 033-036 on probabilistic graphical models, swarm intelligence, transfer learning and knowledge graphs. Each note also contains blockquotes labelled "新手提示" (beginner tips) that explain the terms and formulas most likely to trip up newcomers.
 
 ### 000 Introduction
 
@@ -88,6 +89,15 @@ Reading order: start with 000 for the big picture, then work through 001-006 for
 | 030 | [Recurrent neural networks: temporal weight sharing, bidirectional structure and recursive networks](notes/005-深度学习框架下的神经网络/030-循环神经网络：时序参数共享、双向结构与递归网络.md) | BPTT, bidirectional RNN, recursive networks |
 | 031 | [Generative adversarial networks: zero-sum games, minimax and training difficulties](notes/005-深度学习框架下的神经网络/031-生成式对抗网络：零和博弈、极小极大与训练难题.md) | Generator, discriminator, JS divergence, mode collapse |
 | 032 | [Long short-term memory: gating, memory cells and gradient vanishing](notes/005-深度学习框架下的神经网络/032-长短期记忆网络：门控机制、记忆单元与梯度弥散.md) | Forget gate, input gate, output gate, peephole connections |
+
+### 006 AI Beyond Deep Learning
+
+| No. | Note | Topics |
+| --- | --- | --- |
+| 033 | [Probabilistic graphical models: Bayesian networks, Markov random fields and conditional independence](notes/006-深度学习之外的人工智能/033-概率图模型：贝叶斯网络、马尔可夫随机场与条件独立性.md) | DAG, conditional independence, potential functions, partition function |
+| 034 | [Swarm intelligence: self-organization, decentralization and emergence](notes/006-深度学习之外的人工智能/034-集群智能：自组织、分布式与涌现.md) | Self-organization, emergence, ant colony optimization, pheromone |
+| 035 | [Transfer learning: source and target domains, four method families and meta-learning](notes/006-深度学习之外的人工智能/035-迁移学习：源域目标域、四类迁移方法与元学习.md) | Source and target domains, negative transfer, pre-training and fine-tuning, meta-learning |
+| 036 | [Knowledge graphs: inference, soft logic and distributed representation](notes/006-深度学习之外的人工智能/036-知识图谱：知识推理、软性逻辑与分布式表示.md) | Triple, path ranking, Markov logic network, TransE |
 
 ## How to Use
 
